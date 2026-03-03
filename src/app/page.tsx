@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <div className="flex gap-5 pt-6">
           <a
-            href="https://linkedin.com/in/hanshin-lee-451229120"
+            href="https://www.linkedin.com/in/hanshin-lee-576809115/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-muted transition-colors hover:text-accent"
@@ -48,7 +48,7 @@ export default function Home() {
             LinkedIn &rarr;
           </a>
           <a
-            href="mailto:leehanshin0808@gmail.com"
+            href="mailto:shin.hanshin.lee@gmail.com"
             className="text-sm text-muted transition-colors hover:text-accent"
           >
             Email &rarr;
