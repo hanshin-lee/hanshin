@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fuje",
+    "name": "Fuje",
+    "type": "Contemporary French",
+    "neighborhood": "Gangnam",
+    "description": "Michelin-listed fine dining with seasonal, in-house grown ingredients. Signature dishes elevate French cookery with Korean sensibility.",
+    "rating": 3
+  },
+  {
+    "id": "jungsikdang",
+    "name": "Jungsikdang",
+    "type": "New Korean Fine Dining",
+    "neighborhood": "Gangnam / Apgujeong",
+    "description": "Chef Yim Jungsik's two-Michelin-starred restaurant reimagining Korean staples like gimbap and bibimbap into innovative fine dining.",
+    "rating": 3
+  },
+  {
+    "id": "pyeongyangjip",
+    "name": "Pyeongyangjip",
+    "type": "Korean Grilled Meat",
+    "neighborhood": "Yongsan / Samgakji",
+    "description": "Famous for chadolbagi chargrilled in a rectangular steel basket, served with sweet-sour dipping sauce. A local institution.",
+    "rating": 2
+  },
+  {
+    "id": "wooraeok",
+    "name": "Wooraeok",
+    "type": "Pyeongyang Naengmyeon",
+    "neighborhood": "Jung-gu / Euljiro",
+    "description": "Est. 1946. One of Seoul's oldest naengmyeon restaurants — rich beef broth, benchmark for Pyeongyang-style cold noodles.",
+    "rating": 2
+  }
+]
