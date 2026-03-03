@@ -30,7 +30,7 @@ const experiences = [
     title: "Android Software Engineer, Account Management",
     company: "LG Electronics",
     location: "San Diego, CA",
-    period: "February 2019 – March 2023",
+    period: "February 2019 – March 2020",
     highlights: [
       "Developed native Android applications for LG mobile devices across multiple product lines",
       "Managed end-to-end software lifecycle for Tier-1 mobile OEM accounts",
