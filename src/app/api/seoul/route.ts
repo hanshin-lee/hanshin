@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSpots, saveSpots, type Spot } from "@/lib/seoul";
+import { getSpots, addSpot, type Spot } from "@/lib/seoul";
 import { isAuthenticated } from "@/lib/auth";
 
 export async function GET() {
-  const spots = getSpots();
+  const spots = await getSpots();
   return NextResponse.json(spots);
 }
 
@@ -23,7 +23,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Rating must be 1-3" }, { status: 400 });
   }
 
-  const spots = getSpots();
   const newSpot: Spot = {
     id: name.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "") + "-" + Date.now(),
     name,
@@ -33,7 +32,6 @@ export async function POST(request: NextRequest) {
     rating,
   };
 
-  spots.push(newSpot);
-  saveSpots(spots);
+  await addSpot(newSpot);
   return NextResponse.json(newSpot, { status: 201 });
 }
