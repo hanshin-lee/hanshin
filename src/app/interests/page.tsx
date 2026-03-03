@@ -1,3 +1,22 @@
+import Image from "next/image";
+
+const artists = [
+  {
+    name: "Oasis",
+    album: "(What's the Story) Morning Glory?",
+    cover: "/album-morning-glory.jpg",
+    description:
+      "Britpop at its peak. Morning Glory is one of those albums you can play front to back without skipping a track — Champagne Supernova, Don't Look Back in Anger, Wonderwall. Timeless.",
+  },
+  {
+    name: "Ryuichi Sakamoto",
+    album: "Opus",
+    cover: "/album-opus.jpg",
+    description:
+      "A final concert recorded in Sakamoto's living room while battling illness. Every note carries weight — minimal, intimate, and deeply moving. A masterpiece farewell.",
+  },
+];
+
 const jiujitsu = {
   title: "Brazilian Jiu-Jitsu",
   description:
@@ -70,6 +89,38 @@ export default function InterestsPage() {
               >
                 <h3 className="font-medium text-accent">{topic.name}</h3>
                 <p className="mt-2 text-sm text-muted">{topic.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Music */}
+      <section>
+        <div className="rounded-xl border border-card-border bg-card-bg p-8">
+          <div className="mb-2 text-3xl">🎵</div>
+          <h2 className="text-2xl font-semibold">Music</h2>
+          <p className="mt-3 text-muted leading-relaxed">
+            A couple of artists and albums that have shaped how I listen.
+          </p>
+          <div className="mt-6 grid gap-6 sm:grid-cols-2">
+            {artists.map((artist) => (
+              <div
+                key={artist.name}
+                className="flex gap-4 rounded-lg border border-card-border bg-background p-4"
+              >
+                <Image
+                  src={artist.cover}
+                  alt={`${artist.album} album cover`}
+                  width={120}
+                  height={120}
+                  className="h-28 w-28 shrink-0 rounded-lg object-cover"
+                />
+                <div>
+                  <h3 className="font-medium text-accent">{artist.name}</h3>
+                  <p className="text-sm text-foreground">{artist.album}</p>
+                  <p className="mt-2 text-sm text-muted">{artist.description}</p>
+                </div>
               </div>
             ))}
           </div>
