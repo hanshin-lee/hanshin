@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config({ path: ".env.local" });
 import { neon } from "@neondatabase/serverless";
 import { readFileSync } from "fs";
 import { join } from "path";
