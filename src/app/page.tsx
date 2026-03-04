@@ -42,7 +42,7 @@ export default function Home() {
           </div>
           <div className="flex gap-5 pt-6">
             <a
-              href="https://www.linkedin.com/in/hanshin-lee-576809115/"
+              href="https://www.linkedin.com/in/hanshin-lee/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted transition-colors hover:text-accent"
