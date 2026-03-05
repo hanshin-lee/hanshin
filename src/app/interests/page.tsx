@@ -92,6 +92,18 @@ export default function InterestsPage() {
               </div>
             ))}
           </div>
+          <p className="mt-6 text-sm text-muted">
+            BJJ also spawned a side quest:{" "}
+            <a
+              href="https://grapplay.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent underline underline-offset-2 hover:opacity-80"
+            >
+              Grapplay
+            </a>{" "}
+            — a personal project born on the mats. Because apparently tapping out wasn&apos;t enough; I had to go home and build something too.
+          </p>
         </div>
       </section>
 
