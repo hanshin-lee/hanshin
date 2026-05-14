@@ -1,6 +1,6 @@
 const experiences = [
   {
-    title: "Senior SDK Engineer — Public Developer Platform",
+    title: "Senior SDK Engineer",
     company: "Cox Automotive",
     location: "San Francisco Bay Area",
     period: "January 2022 – Present",
@@ -12,7 +12,7 @@ const experiences = [
     ],
   },
   {
-    title: "SDK Engineer — Developer Platform & Integrations",
+    title: "SDK Engineer",
     company: "Fyusion Inc.",
     location: "San Francisco Bay Area",
     period: "March 2020 – January 2022",
@@ -24,7 +24,7 @@ const experiences = [
     ],
   },
   {
-    title: "Android Software Engineer, Carrier Accounts",
+    title: "Android Software Engineer",
     company: "LG Electronics",
     location: "San Diego, CA",
     period: "February 2019 – March 2020",
