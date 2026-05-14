@@ -37,6 +37,38 @@ const jiujitsu = {
   ],
 };
 
+const art = {
+  title: "Art",
+  description:
+    "Building Gallr — a guide to art exhibitions across Korea — turned a passing curiosity into a habit. I gravitate toward minimalism and the post-war Asian avant-garde: work that says a lot by removing almost everything.",
+  featured: {
+    artist: "Lee Ufan (이우환)",
+    bio: "Korean painter, sculptor, and theorist; co-founder of Japan's Mono-ha (\"School of Things\") movement. His work pares painting and sculpture down to the encounter between a single mark, a stone, a steel plate, and the empty space around it.",
+    works: [
+      {
+        title: "From Point / From Line",
+        year: "1970s",
+        note: "Repeated brushstrokes that fade across the canvas — each stroke loaded with pigment, then exhausted, marking time as much as space.",
+      },
+      {
+        title: "Relatum series",
+        year: "1968 – present",
+        note: "Sculptures pairing natural stones with industrial steel plates. Nothing is altered; the meaning is the relationship between them.",
+      },
+      {
+        title: "Dialogue",
+        year: "2000s – present",
+        note: "Single grey-blue brushstrokes on raw canvas. The painting is mostly silence, with one deliberate gesture.",
+      },
+    ],
+    venues: [
+      "Lee Ufan Museum, Naoshima (Japan)",
+      "Space Lee Ufan, Busan Museum of Art",
+      "Pace Gallery / Lisson Gallery (international)",
+    ],
+  },
+};
+
 const tech = {
   title: "Tech & Engineering",
   description:
@@ -102,7 +134,14 @@ export default function InterestsPage() {
             >
               Grapplay
             </a>{" "}
-            — a personal project born on the mats. Because apparently tapping out wasn&apos;t enough; I had to go home and build something too.
+            — a personal project born on the mats. Because apparently tapping out wasn&apos;t enough; I had to go home and build something too. See it on the{" "}
+            <a
+              href="/projects"
+              className="text-accent underline underline-offset-2 hover:opacity-80"
+            >
+              projects page
+            </a>
+            .
           </p>
         </div>
       </section>
@@ -135,6 +174,65 @@ export default function InterestsPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Art */}
+      <section>
+        <div className="rounded-xl border border-card-border bg-card-bg p-8">
+          <div className="mb-2 text-3xl">🎨</div>
+          <h2 className="text-2xl font-semibold">{art.title}</h2>
+          <p className="mt-3 text-muted leading-relaxed">{art.description}</p>
+
+          <div className="mt-6 rounded-lg border border-card-border bg-background p-6">
+            <p className="text-sm font-mono text-accent">Featured artist</p>
+            <h3 className="mt-1 text-xl font-semibold">
+              {art.featured.artist}
+            </h3>
+            <p className="mt-3 text-sm text-muted leading-relaxed">
+              {art.featured.bio}
+            </p>
+
+            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+              {art.featured.works.map((w) => (
+                <div
+                  key={w.title}
+                  className="rounded-lg border border-card-border bg-card-bg p-4"
+                >
+                  <h4 className="font-medium text-accent">{w.title}</h4>
+                  <p className="mt-1 text-xs text-muted font-mono">{w.year}</p>
+                  <p className="mt-2 text-sm text-muted">{w.note}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6">
+              <p className="text-xs font-mono uppercase tracking-wide text-muted">
+                Where to see the work
+              </p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {art.featured.venues.map((v) => (
+                  <span
+                    key={v}
+                    className="rounded-full border border-card-border px-3 py-1 text-xs text-muted"
+                  >
+                    {v}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <p className="mt-6 text-sm text-muted">
+              Discovering galleries and exhibitions is also what{" "}
+              <a
+                href="/projects"
+                className="text-accent underline underline-offset-2 hover:opacity-80"
+              >
+                Gallr
+              </a>{" "}
+              is for.
+            </p>
           </div>
         </div>
       </section>

@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Hanshin Lee",
-  description: "Senior Android Developer — Personal Website",
+  description:
+    "Senior Software Engineer — 8+ years building SDKs, developer tools, and AI-powered apps.",
 };
 
 export default function RootLayout({
