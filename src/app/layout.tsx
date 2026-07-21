@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hanshin Lee",
+  title: "Hanshin Lee | Senior Android SDK Engineer",
   description:
-    "Senior Software Engineer — 8+ years building SDKs, developer tools, and AI-powered apps.",
+    "Senior Android SDK Engineer with 7+ years delivering production mobile software, public Kotlin APIs, enterprise integrations, and on-device ML.",
 };
 
 export default function RootLayout({

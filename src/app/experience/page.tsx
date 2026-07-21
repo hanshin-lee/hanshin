@@ -5,10 +5,12 @@ const experiences = [
     location: "San Francisco Bay Area",
     period: "January 2022 – Present",
     highlights: [
-      "Set technical direction for a public SDK consumed by multiple enterprise client engineering teams — own the full developer-facing surface: API design, KDoc, sample apps, migration guides, and semver/backward-compatibility policy",
-      "Built the integration support loop with downstream developer teams: triage issues, ship fixes, and feed pain points back into the roadmap",
-      "Shipped on-device ML inference and applied harness engineering (evals, guardrails, structured context pipelines) to AI-assisted developer workflows; ran internal enablement so other engineers could adopt the same tooling, measurably lifting team delivery velocity",
-      "Authored a layered test suite (kotlin.test, Espresso, Marathon, Paparazzi) and CI gates so that \"the docs and the SDK don't drift\" is a property of the build, not a checklist",
+      "Set technical direction and lead implementation of a public Android SDK used by multiple enterprise client engineering teams for vehicle imaging and inspection workflows.",
+      "Own the complete integration surface, including Kotlin APIs, multi-module architecture, KDoc, sample apps, migration guidance, release versioning, and backward-compatibility policy.",
+      "Translate partner and product requirements into stable SDK contracts, then deliver the camera, networking, and on-device ML components behind them.",
+      "Partner directly with customer, product, and backend teams to diagnose integration issues, ship fixes, and turn recurring implementation friction into SDK roadmap improvements.",
+      "Implemented on-device ML inference and introduced repeatable evaluation criteria and release checks for ML-enabled functionality; shared the practices across the team to improve delivery consistency.",
+      "Built layered automated coverage with kotlin.test, Espresso, Marathon, and Paparazzi, plus CI checks that keep SDK behavior, documentation, and examples aligned.",
     ],
   },
   {
@@ -17,10 +19,11 @@ const experiences = [
     location: "San Francisco Bay Area",
     period: "March 2020 – January 2022",
     highlights: [
-      "Shipped and scaled a public 3D-capture SDK used by e-commerce and automotive partners globally — including onboarding one of Korea's largest e-commerce groups to 2M+ monthly captures",
-      "Owned SDK documentation, sample projects, and white-glove integration support for external client engineering teams — cut integration time by 40% by rewriting docs against real partner pain points",
-      "Drove Korean-market developer/partner expansion as a hands-on engineer + relationship owner, contributing to an $8M+ regional investment and Fyusion's 2021 acquisition by Cox Automotive",
-      "Acted as the bridge between research/ML, product, and external developer teams — translating cutting-edge capture models into something a partner engineer could integrate in an afternoon",
+      "Shipped and scaled a 3D-capture Android SDK used by automotive and e-commerce partners worldwide, including one of Korea's largest commerce groups at 2M+ monthly captures.",
+      "Owned partner onboarding from technical discovery through production launch, aligning Android SDK behavior with customer applications, backend services, and operational requirements.",
+      "Reduced partner integration time by 40% by rebuilding SDK documentation, sample projects, and troubleshooting guidance around issues observed in real implementations.",
+      "Worked across ML research, product, backend, and client engineering to turn capture models into stable, supportable Android APIs for external developers.",
+      "Led technical relationships for Korean-market partners, contributing to an $8M+ regional investment and Fyusion's 2021 acquisition by Cox Automotive.",
     ],
   },
   {
@@ -29,75 +32,72 @@ const experiences = [
     location: "San Diego, CA",
     period: "February 2019 – March 2020",
     highlights: [
-      "Delivered Android software for Tier-1 US carriers end-to-end, coordinating across platform, hardware, and certification teams — early training in shipping into environments with competing priorities and loosely defined specs",
+      "Delivered Android software for Tier-1 US carrier devices from planning through production release, coordinating platform, hardware, quality, and certification dependencies.",
+      "Resolved carrier and system integration requirements under strict release constraints while maintaining compatibility across device and Android platform variants.",
     ],
   },
 ];
 
 const skills = {
-  "AI / LLMs": [
-    "OpenAI API",
-    "Function calling & tool use",
-    "RAG",
-    "Agentic systems",
-    "Prompt engineering",
-    "Harness engineering",
-    "Evals",
-    "Guardrails",
-    "Tool sandboxes",
-    "Context pipelines",
-    "MCP",
-    "On-device ML inference",
-  ],
-  Languages: ["Python", "TypeScript/JavaScript", "Kotlin", "Swift", "Java"],
-  "Full-Stack & Web": [
-    "Node.js",
-    "Next.js",
-    "React",
-    "REST & GraphQL APIs",
-    "Supabase/Postgres",
-    "Vercel",
-    "Serverless",
-  ],
-  Mobile: [
+  Android: [
+    "Kotlin",
+    "Java",
+    "Android SDK",
     "Jetpack Compose",
-    "Kotlin Multiplatform",
-    "Compose Multiplatform",
-    "SwiftUI",
     "CameraX",
     "Coroutines/Flow",
+    "Room",
+    "WorkManager",
+    "Hilt/Dagger",
   ],
-  "Developer Tooling & SDKs": [
-    "Public API design",
-    "KDoc / typed docs",
+  "SDK & Public API Engineering": [
+    "Kotlin API design",
+    "Multi-module libraries",
+    "KDoc",
     "Sample apps",
-    "Integration guides",
-    "Multi-module / monorepo",
-    "Semver & backward compatibility",
+    "Migration guides",
+    "Semantic versioning",
+    "Backward compatibility",
+    "ProGuard/R8",
   ],
-  Delivery: [
-    "GitHub Actions",
-    "Gradle",
-    "Fastlane",
-    "Firebase",
-    "Vercel",
-    "Playwright",
-    "Observability / analytics",
+  "Enterprise API Integration": [
+    "REST",
+    "GraphQL",
+    "Retrofit/Ktor",
+    "OkHttp",
+    "Protobuf",
+    "Client networking",
+    "Offline-first caching",
+    "Error handling",
+    "Integration support",
   ],
-  "Testing & Quality": [
+  "AI & ML": [
+    "OpenAI API integration",
+    "Tool/function calling",
+    "Retrieval-augmented generation",
+    "Model evaluation",
+    "Safety controls",
+    "Structured context workflows",
+    "On-device ML inference",
+  ],
+  "Architecture & Quality": [
+    "MVVM",
+    "MVI",
+    "Clean Architecture",
     "JUnit",
     "kotlin.test",
     "Espresso",
     "Paparazzi",
-    "Playwright",
+    "Marathon",
     "Snapshot & integration testing",
   ],
-  "Community & Content": [
-    "Technical writing",
-    "Demo & sample-app authoring",
-    "Developer onboarding",
-    "Integration support",
-    "Open-source collaboration",
+  "Build & Delivery": [
+    "Gradle",
+    "GitHub Actions",
+    "Fastlane",
+    "Firebase",
+    "CI quality gates",
+    "Observability & analytics",
   ],
 };
 
@@ -109,10 +109,8 @@ const education = {
 
 const military = {
   title: "Sergeant, Head Translator",
-  org: "Korean Intelligence Production Center (KIPC)",
-  period: "November 2013 – August 2015",
-  description:
-    "Led translation operations and coordinated multinational conferences across NGA, NIS, and the Ministry of National Defense — fluent English/Korean, with experience representing technical work to non-technical and international audiences.",
+  org: "Korean Intelligence Production Center",
+  period: "2013 – 2015",
 };
 
 export default function ExperiencePage() {
@@ -123,10 +121,9 @@ export default function ExperiencePage() {
           Experience<span className="text-accent">.</span>
         </h1>
         <p className="mt-3 text-lg text-muted max-w-3xl">
-          8+ years building production SDKs, developer tools, and AI-powered
-          consumer apps. I ship the surface developers actually touch — public
-          APIs, docs, sample code, and integration guides — and turn that craft
-          into adoption.
+          7+ years delivering production Android software for enterprise
+          customers, global commerce platforms, and Tier-1 carriers, with a
+          focus on stable public APIs, reliable integrations, and on-device ML.
         </p>
       </div>
 
@@ -211,7 +208,6 @@ export default function ExperiencePage() {
           <h3 className="text-lg font-semibold">{military.title}</h3>
           <p className="text-accent">{military.org}</p>
           <p className="text-sm text-muted">{military.period}</p>
-          <p className="mt-3 text-sm text-muted">{military.description}</p>
         </div>
       </section>
     </div>

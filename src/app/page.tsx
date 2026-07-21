@@ -11,25 +11,34 @@ export default function Home() {
             Hanshin Lee<span className="text-accent">.</span>
           </h1>
           <h2 className="text-3xl font-semibold text-muted sm:text-4xl">
-            Senior Software Engineer
+            Senior Android SDK Engineer
           </h2>
           <p className="max-w-xl text-lg leading-relaxed text-muted">
-            8+ years building production SDKs, developer tools, and AI-powered
-            consumer apps. Currently a Senior SDK Engineer at{" "}
-            <span className="text-foreground font-medium">Cox Automotive</span>{" "}
-            (formerly Fyusion). I ship the surface developers actually touch —
-            public APIs, docs, sample code — and run a 500+ MAU community on the
-            side at{" "}
-            <a
-              href="https://grapplay.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent underline underline-offset-2 hover:opacity-80"
-            >
-              Grapplay
-            </a>
-            . Based in Los Angeles.
+            Android and SDK engineer with 7+ years delivering production mobile
+            software for enterprise customers, global commerce platforms, and
+            Tier-1 carriers. At{" "}
+            <span className="font-medium text-foreground">Cox Automotive</span>, I
+            lead public Android SDK development across Kotlin API design, camera
+            and on-device ML pipelines, and enterprise backend integration. Based
+            in Los Angeles.
           </p>
+          <div className="grid max-w-2xl gap-3 pt-1 sm:grid-cols-3">
+            {[
+              ["2M+", "monthly captures onboarded"],
+              ["40%", "faster partner integration"],
+              ["$8M+", "regional investment supported"],
+            ].map(([value, label]) => (
+              <div
+                key={value}
+                className="rounded-lg border border-card-border bg-card-bg px-4 py-3"
+              >
+                <p className="text-lg font-semibold text-accent">{value}</p>
+                <p className="mt-0.5 text-xs leading-relaxed text-muted">
+                  {label}
+                </p>
+              </div>
+            ))}
+          </div>
           <div className="flex flex-wrap gap-4 pt-4">
             <Link
               href="/experience"
@@ -70,6 +79,12 @@ export default function Home() {
               className="text-sm text-muted transition-colors hover:text-accent"
             >
               Email &rarr;
+            </a>
+            <a
+              href="tel:+14082107521"
+              className="text-sm text-muted transition-colors hover:text-accent"
+            >
+              Phone &rarr;
             </a>
           </div>
         </div>
