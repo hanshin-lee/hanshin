@@ -3,10 +3,10 @@ import Image from "next/image";
 const projects = [
   {
     name: "Grapplay",
-    tagline: "AI-augmented community platform for jiu-jitsu.",
+    tagline: "Android community platform for jiu-jitsu.",
     description:
-      "Built and operate one of Korea's largest jiu-jitsu platforms — 500+ monthly active users, near-zero marketing spend — entirely as a solo full-stack engineer. The Next.js web app is live; Android and iOS Kotlin Multiplatform apps ship H2 2026. I run the whole stack as a one-person team and lean on AI harness engineering — evals, guardrails, tool sandboxes, and structured context pipelines — to keep LLM-driven workflows reliable as the product evolves.",
-    role: "Founder & Sole Engineer — 2024 to present.",
+      "Building the Android client for a jiu-jitsu community serving 500+ monthly active users, using Kotlin Multiplatform and Compose with a shared API and domain layer.",
+    role: "Founder & Lead Engineer — 2024 to present.",
     images: [],
     links: [{ label: "grapplay.com", href: "https://grapplay.com" }],
     stack: [
@@ -22,16 +22,15 @@ const projects = [
       "GitHub Actions",
     ],
     highlights: [
-      "500+ monthly active users on near-zero marketing spend; the entire stack — Postgres/Supabase backend, REST APIs, web, mobile, CI/CD, payouts, analytics — run by one person.",
-      "AI harness engineering invested up front: evals, guardrails, tool sandboxes, and structured context pipelines so LLM behavior in product stays reliable as models and prompts change.",
-      "Direct line to a real developer-experience problem — I am the user, the integrator, and the operator, so I know first-hand which docs, SDKs, and abstractions are good and which ones make you give up at 11pm.",
+      "Serving 500+ monthly active users with a Kotlin Multiplatform client and shared API and domain layer.",
+      "Apply LLM APIs to structured content and operational workflows with explicit evaluation criteria, safety controls, and monitoring for dependable product behavior.",
     ],
   },
   {
     name: "Gallr",
-    tagline: "Cross-platform consumer app — Android & iOS, one codebase.",
+    tagline: "Production consumer app built with Kotlin Multiplatform and Compose.",
     description:
-      "Gallr is a mobile-first guide to art exhibitions across Korea — featured picks, opening/closing this week, and a map view of every gallery. Designed, built, and released live on Google Play and the App Store from a single Compose Multiplatform codebase. The kind of polished, end-to-end sample-quality project I ship to show \"here's what good looks like\" — not a toy demo, a real product real users open.",
+      "Designed, built, and released a mobile guide to art exhibitions across Korea, owning Android architecture, data integration, release automation, and post-launch quality.",
     role: "Founder & Lead Engineer — 2024 to present.",
     images: [
       { src: "/gallr-map.png", alt: "Gallr map view showing exhibitions across Seoul" },
@@ -61,10 +60,9 @@ const projects = [
       "Eleventy (marketing site)",
     ],
     highlights: [
-      "Single Kotlin codebase ships to Android and iOS via Compose Multiplatform, including a Naver Maps `UIKitView` interop for the iOS map.",
-      "Owned end-to-end: discovery, store assets, release pipeline, and post-launch iteration across both platforms.",
-      "Bilingual KO/EN data pipeline with a sheet-to-Supabase sync job; new schema columns are deploy-safe through an explicit known-columns contract.",
-      "Reductionist monochrome design system — compile-time Kotlin design tokens, custom typography, and a tight component vocabulary.",
+      "Built shared domain and data layers with API integration and offline-first caching.",
+      "Integrated crash reporting and analytics for post-launch quality and observability.",
+      "Automated store delivery and release workflows.",
     ],
   },
 ];
@@ -77,8 +75,8 @@ export default function ProjectsPage() {
           Projects<span className="text-accent">.</span>
         </h1>
         <p className="mt-3 text-lg text-muted max-w-3xl">
-          AI- and developer-facing things I&apos;ve built outside the day job —
-          shipped, in the wild, and still being polished.
+          Production Android projects I design, build, release, and operate
+          outside the day job.
         </p>
       </div>
 
